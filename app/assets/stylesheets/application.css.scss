@@ -1,0 +1,235 @@
+/*
+
+ *= require_self
+ */
+
+@import 'normalize';
+
+/* Reset some default styles */
+body, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#sidebar {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed; /* Fixed positioning to keep it on the left */
+    height: 100%; /* Make it take the full height of the viewport */
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar li {
+    margin-bottom: 10px;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: #fff;
+}
+.sign_in {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.main.content {
+    margin-left: 240px; /* Adjust the margin to make room for the sidebar */
+    padding: 20px;
+
+}
+
+#header {
+    background-color: skyblue;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 10px;
+
+}
+
+.button1, .button2 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f44336;
+    color: white;
+}
+/* ... (previous styles) ... */
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar li {
+    margin-bottom: 10px;
+    transition: all 0.3s; /* Add a smooth transition effect */
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px; /* Increase font size for all sidebar links */
+    display: block; /* Make the entire area clickable */
+    padding: 10px; /* Increase padding for better clickability */
+}
+
+#sidebar a:hover {
+    background-color: #555; /* Change background color on hover */
+}
+
+#sidebar .category a {
+    font-size: 40px; /* Increase font size for the Tumblr link */
+    font-weight: bold; /* Make it bold */
+}
+
+.sign_in {
+    margin-top: 20px;
+    color: #fff;
+}
+.post_container {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+/* page wrapper starts here */
+.post_wrapper {
+    max-width: 700px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding for better spacing */
+    border:solid;
+    border-style: double;
+    background-color:aliceblue;
+
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add some styling on hover for the submit button */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+/* page warpper ends here */
+/* ... (remaining styles) ... */
+/* Add styles for the truncated body text */
+.body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; /* Set text color */
+    margin-bottom: 10px; /* Add some space at the bottom */
+}
+
+/* Optional: Add styles for the "See More" link */
+.body .see-more {
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Optional: Add hover effect for the "See More" link */
+.body .see-more:hover {
+    color: #0056b3;
+}
+
+/* comments css starts here */
+
+#comment {
+    margin-top: 20px; /* Add space at the top of the comment section */
+}
+
+#comment h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#comment h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Optional: Style the form if needed */
+#comment form {
+    margin-top: 10px;
+}
+
+/* Optional: Style the form inputs, labels, or any other specific styles */
+#comment form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#comment form input[type="text"],
+#comment form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#comment form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#comment form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+

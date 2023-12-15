@@ -1,0 +1,29 @@
+<%= stylesheet_link_tag 'posts', media: 'all' , 'data-turbo-track' => true %>
+ <div class ="post_content" >	
+	<h1 class="title">
+	 <%= @post.title %>
+	</h1>
+
+	<p class="body">
+
+	<%= @post.body %>
+	</p>
+
+	<p classs="date">
+	  submitted <%= time_ago_in_words(@post.created_at)%> ago
+	</p>
+	  <% if user_signed_in? %>
+	      <%= link_to "Edit",edit_post_path(@post) %> 
+	     <button > <%= button_to "delete", post_path(@post), method: :delete %></button>
+       <% end %>
+   <div id="comment">
+     <h2> <%= @post.comments.count%> comments </h2>
+
+     <%= render @post.comments %>
+     <h3> Join Disccussion: </h3>
+       <%= render 'comments/form'%>
+   </div>
+
+	 
+	 
+ </div>	

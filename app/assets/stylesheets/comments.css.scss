@@ -1,0 +1,27 @@
+.comment_clearfix {
+    overflow: hidden; /* Clearfix to handle floated elements */
+    margin-bottom: 20px; /* Add space between comments */
+}
+
+.comment_content {
+    border: 1px solid #ddd; /* Border around comment content */
+    padding: 15px; /* Padding for inner content */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.comment_name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color:#777;
+}
+
+.comment_body {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.comment_title {
+    font-style: italic;
+    color: #555;
+}
