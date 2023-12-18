@@ -13,8 +13,8 @@
 	  submitted <%= time_ago_in_words(@post.created_at)%> ago
 	</p>
 	  <% if user_signed_in? %>
-	      <%= link_to "Edit",edit_post_path(@post) %> 
-	     <button > <%= button_to "delete", post_path(@post), method: :delete %></button>
+	    <button class="button_edit" >  <%= link_to "Edit",edit_post_path(@post) %> </button>
+	     <button class="button_delete" > <%= button_to "delete post", post_path(@post), method: :delete %></button>
        <% end %>
    <div id="comment">
      <h2> <%= @post.comments.count%> comments </h2>

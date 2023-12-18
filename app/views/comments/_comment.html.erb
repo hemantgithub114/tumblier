@@ -7,7 +7,7 @@
   </div>
   	 <% if user_signed_in? %>
 	  
-	   <p> <%= link_to 'delete' ,[comment.post,comment],method: :delete  %> </p>
+	   <button class="button_delete"><%= button_to 'delete comment' ,[comment.post, comment],method: :delete  %> </button>
 	  <% end %> 
 	</div><br>
 	
